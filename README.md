@@ -1,0 +1,1 @@
+This example demonstrates a common pitfall in Elixir when working with lists and enumeration.  The code attempts to remove elements from a list while iterating over it using `Enum.each`.  However, this approach does not modify the original list because `List.delete` creates a *new* list, leaving the original list unchanged.  The solution shows how to correctly modify the list.
